@@ -16,7 +16,7 @@ export default function Home() {
 
   const [error, setError] = useState<string>("");
 
-  // Helper: refresh balance
+  // Helper: so it refreshes the balance
   const refreshBalance = async () => {
     try {
       setError("");
