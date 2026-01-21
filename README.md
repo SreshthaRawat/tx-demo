@@ -5,7 +5,10 @@ It connects with MetaMask using BrowserProvider, fetches the user’s wallet bal
 Then I wait for the transaction receipt to confirm it and display block number and gas used. voila!
 
 so the flow is like:
-we use MetaMask (the wallet) to talk directly to the Blockchain (a global or shared database).
-then comes the interface.
-Ethers.js connects to website to the blockchain.
-MetaMask holds the user's keys and approves actions.
+1. we use MetaMask (the wallet) to talk directly to the Blockchain (a global or shared database).
+
+2. then comes the interface.
+
+3. Ethers.js connects to website to the blockchain.
+
+4. MetaMask holds the user's keys and approves actions.
