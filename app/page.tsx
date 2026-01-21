@@ -16,7 +16,7 @@ export default function Home() {
 
   const [error, setError] = useState<string>("");
 
-  // Helper: so it refreshes the balance
+  // Helper function:- so it basically refreshes the balance
   const refreshBalance = async () => {
     try {
       setError("");
@@ -37,7 +37,7 @@ export default function Home() {
     }
   };
 
-  // Connect wallet
+  // here we connect to the wallet
   const connectWallet = async () => {
     try {
       setError("");
@@ -68,7 +68,7 @@ export default function Home() {
     }
   };
 
-  // Send ETH transaction
+  // here we send ETH transaction
   const sendTransaction = async () => {
     try {
       setError("");
@@ -120,7 +120,7 @@ export default function Home() {
     }
   };
 
-  // Auto refresh if account/chain changes
+  // Auto refreshes if account or chain changes
   useEffect(() => {
     const eth = (window as any).ethereum;
     if (!eth) return;
@@ -157,7 +157,8 @@ export default function Home() {
       </h1>
 
       <p style={{ marginTop: 8, opacity: 0.8 }}>
-        This mini-demo proves: MetaMask connect, transaction signing, gas + receipt tracking.
+        This mini project has MetaMask connect, transaction signing, gas + receipt tracking.
+        there will be changes in future as I'm still learning.
       </p>
 
       <div style={{ marginTop: 16, padding: 16, border: "1px solid #ddd", borderRadius: 10 }}>
@@ -233,7 +234,8 @@ export default function Home() {
 
       <div style={{ marginTop: 20, opacity: 0.75 }}>
         <p>
-          note to myself : Use Sepolia/Amoy Testnet with some faucet ETH/MATIC for testing.
+          note (to myself or other users who are using this) : <br></br>
+          Use Sepolia/Amoy Testnet with some faucet ETH/MATIC for testing.
         </p>
       </div>
     </main>
