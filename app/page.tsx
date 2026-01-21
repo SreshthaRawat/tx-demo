@@ -157,7 +157,7 @@ export default function Home() {
       </h1>
 
       <p style={{ marginTop: 8, opacity: 0.8 }}>
-        This mini project has MetaMask connect, transaction signing, gas + receipt tracking.
+        This project has MetaMask connect, transaction signing, gas + receipt tracking.
         there will be changes in future as I'm still learning.
       </p>
 
